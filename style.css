@@ -17,6 +17,32 @@ header {
 }
 
 /* Navigation menu styling */
+#menu {
+    display: flex;
+    justify-content: space-around;
+    /* padding: 5px; */
+}
+
+#menu homepage {
+    flex: 1;
+}
+
+#menu subdomains {
+    flex: 2;
+}
+
+#homepage {
+    display: inline;
+    margin-right: 18px;
+}
+
+#homepage a{
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+
 nav ul {
     list-style-type: none;
     margin: 0;

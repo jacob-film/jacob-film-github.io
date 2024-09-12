@@ -1,15 +1,15 @@
 /* General body styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #e0f7e9; /* Light green background */
-    color: #1a3d1f; /* Dark green text */
+    background-color: #adbdb8; /* Light green background */
+    color: #080808; /* Dark green text */
     margin: 0;
     padding: 0;
 }
 
 /* Header styling */
 header {
-    background: linear-gradient(180deg, #2e8b57, #66cdaa); /* Gradient from medium green to light green */
+    background: linear-gradient(168deg, #090909 25%, #283432 45%, #405f5a 58%, #2c3634 80%); /* Gradient from medium green to light green */
     color: white;
     padding: 20px;
     text-align: center;

@@ -21,91 +21,48 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-        <style>
-            
-            .my-section {
-                padding-bottom: 50px;
-            }
-
-            #headshot {
-                text-align: center; /* Center-aligns the container's content */
-            }
-
-            #headshot img, #headshot div {
-                display: inline-block; /* Aligns image and text next to each other */
-                vertical-align: middle; /* Vertically aligns the image and text */
-            }
-
-            #headshot div {
-                margin: 0; /* Removes default margin for the paragraph */
-                margin-top: 50px;
-                max-width: 400px;
-            }
-
-            #headshot img {
-                width: 300px; /* Sets the width of the image */
-                height: 300px; /* Sets the height of the image */
-                object-fit: cover; /* Ensures the image covers the area without distortion */
-                border-radius: 50%; /* Creates a circular shape */
-                /* border: 4px solid rgba(3, 42, 36, 0.631); Semi-transparent green Optional border */
-                margin-top: 50px; /* Adds space above the image */
-                margin-right: 20px; /* Adds space between the image and text */
-            }
-
-            #resume {
-                text-align: center; /* Center-aligns the container's content */
-            }
-
-            #resume p, #resume a {
-                display: inline-block;
-                vertical-align: middle; /* Vertically aligns the image and text */
-            }
-
-            #resume a img{
-                width: 40px; /* Sets the width of the image */
-                height: auto; /* Sets the height of the image */
-                margin-left: 20px; /* Adds space between the image and text */
-            }
-
-        </style>
     </head>
 
     <body>
 
         <!-- Website Header -->
         <header>
-            <nav id="menu">
-                <p id="homepage"><a href="index.html">Jacob Film</a></p>
-                <ul id="subdomains">
-                    <li><a href="education.html">Education</a></li>
-                    <li><a href="work_experience.html">Work Experience</a></li>
-                    <li><a href="projects.html">Projects</a></li>
+            <nav>
+                <a class="home" href="index.html">Jacob Film</a>
+                <ul>
+                    <li><a class="nav-link" href="education.html">Education</a></li>
+                    <li><a class="nav-link" href="work_experience.html">Work Experience</a></li>
+                    <li><a class="nav-link" href="projects.html">Projects</a></li>
                 </ul>
             </nav>
         </header>
 
-        <!-- My headshot -->
-        <section id="headshot" class="my-section">
-            <img src="Images/Headshot.jpeg" alt="Jacob Film">
-            <div>
-                <p>Welcome to my personal website!</p>
-                <p>I've set this up to add some information about my engineering experience and personal projects. Let me know what you think!</p>
+        <!-- Headshot and welcome-->
+        <section>
+            <div class="headshot">
+                <img class="headshot-img" src="Images/Headshot.jpeg" alt="Jacob Film">
+                <div class="headshot-text">
+                    <p>Welcome to my personal website!</p>
+                    <p>I've set this up to add some information about my engineering experience and personal projects. Let me know what you think!</p>
+                </div>
             </div>
         </section>
 
-        <!-- My Resume -->
-        <section id="resume" class="my-section">
+        <!-- Resume -->
+        <section class="resume">
             <p>Gotta run? Download my resume!</p>
             <a href="Documents/Resume - Jacob Film.pdf" download> 
-                <img src="Images/Resume_Icon.png" alt="Resume Download">
+                <img class="resume-icon" src="Images/Resume_Icon.png" alt="Resume Download">
             </a>
         </section>
 
         <!-- Footer -->
         <footer>
-            <a href="https://github.com/jacob-film" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/jacobfilm/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://open.spotify.com/artist/6nDce4AEY7qAoFxVhUZ8ha?si=ni6INrIJSmSukTKqRkfofw" target="_blank"><i class="fab fa-spotify"></i></a>
+            <div>
+                <a href="https://github.com/jacob-film" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/jacobfilm/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://open.spotify.com/artist/6nDce4AEY7qAoFxVhUZ8ha?si=ni6INrIJSmSukTKqRkfofw" target="_blank"><i class="fab fa-spotify"></i></a>
+            </div>
         </footer>
 
     </body>

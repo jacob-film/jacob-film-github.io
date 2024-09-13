@@ -9,37 +9,27 @@ body {
 
 /* Header styling */
 header {
-    background: linear-gradient(168deg, #090909 25%, #283432 45%, #405f5a 58%, #2c3634 80%); /* Diagonal green and gray gradient */
+    background: linear-gradient(168deg, #090909 25%, 
+    #283432 45%, #405f5a 58%, #2c3634 80%);
+    /* Diagonal green and gray gradient */
     color: white;
     padding: 20px;
+    /* position: fixed; */
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Navigation menu styling */
-#menu {
+nav {
     display: flex;
     justify-content: space-around;
-    /* padding: 5px; */
+    align-items: center;
 }
 
-#menu p {
-    flex: 1;
-}
-
-#menu ul {
-    flex: 1;
-}
-
-#homepage {
-    display: inline;
-    margin-right: 18px;
-}
-
-#homepage a{
+nav a{
     color: white;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 26px;
 }
 
 nav ul {
@@ -51,18 +41,76 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin-right: 18px;
+    margin-inline: 10px;
 }
 
-nav ul li a {
+.nav-link {
     color: white;
     text-decoration: none;
     font-size: 18px;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
+/* Define the keyframes for the shake animation */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+  }
+  
+/* Apply the shake animation on hover */
+.nav-link:hover {
+animation: shake 0.9s ease-in-out;
 }
+
+/* .nav-link:hover {
+    text-decoration: underline;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+} */
+
+
+/* headshot styling */
+.headshot {
+    text-align: center;
+    margin-block: 50px; /* Adds space to top and bottom of block */
+}
+
+.headshot-img, .headshot-text {
+    display: inline-block; /* Aligns image and text next to each other */
+    vertical-align: middle; /* Vertically aligns the image and text */
+    margin-inline: 20px; /* Adds space to left and right of each element */
+}
+
+.headshot-img {
+    width: 300px; /* Sets the width of the image */
+    height: 300px; /* Sets the height of the image */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 50%; /* Creates a circular shape */
+}
+
+.headshot-text {
+    max-width: 400px;
+}
+
+/* resume styling */
+.resume {
+    text-align: center; /* center-aligns the container's content */
+    /* bottom: 100px; */
+}
+
+.resume p, .resume-icon {
+    display: inline-block;
+    vertical-align: middle; /* Vertically aligns the image and text */
+    margin-inline: 5px; /* Adds space around the icon */
+}
+
+.resume-icon{
+    width: 40px; /* Sets the width of the icon */
+    height: auto; /* Sets the height of the icon */
+}
+
+
 
 /* Title styling */
 h1 {
@@ -75,26 +123,33 @@ a {
     color: #2e8b57; /* Medium green for links */
 }
 
-a:hover {
-    color: #405f5a; /* Dark green on hover */
-    text-decoration: underline;
-}
+/* a:hover { */
+    /* color: #405f5a; Dark green on hover */
+    /* text-decoration: underline; */
+/* } */
 
+/* Footer styling */
 footer {
     background: linear-gradient(168deg, #090909 25%, #283432 45%, #405f5a 58%, #2c3634 80%); /* Diagonal green and gray gradient */
-    color: white; /* default text color */
-    text-align: center;
-    padding: 25px;
     position: fixed;
     width: 100%;
     bottom: 0;
 }
 
-footer a {
+footer div {
+    display: flex; /* flexbox used to center icons */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer i {
     color: #fff;
     font-size: 26px;
-    padding-left: 5px;
-    padding-right: 5px;
+    margin-inline: 5px;
 }
 
 /* footer a:hover{

@@ -20,6 +20,14 @@ header {
 }
 
 /* Navigation menu styling */
+@keyframes shake {
+    0% {transform: translateX(0) rotate(0deg);}
+    25% {transform: translateX(-1px) rotate(-1deg);}
+    50% {transform: translateX(1px) rotate(1deg);}
+    75% {transform: translateX(-1px) rotate(-1deg);}
+    100% {transform: translateX(0) rotate(0deg);}
+}
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -30,6 +38,10 @@ nav a{
     color: white;
     text-decoration: none;
     font-size: 26px;
+}
+
+nav a:hover {
+    animation: shake 0.5s ease-in-out;
 }
 
 nav ul {
@@ -45,29 +57,17 @@ nav ul li {
 }
 
 .nav-link {
+    display: inline-block;
     color: white;
-    text-decoration: none;
+    /* text-decoration: none; */
     font-size: 18px;
 }
 
-/* Define the keyframes for the shake animation */
-@keyframes shake {
-    0% { transform: translateX(0); }
-    25% { transform: translateX(-5px); }
-    50% { transform: translateX(5px); }
-    75% { transform: translateX(-5px); }
-    100% { transform: translateX(0); }
-  }
-  
-/* Apply the shake animation on hover */
 .nav-link:hover {
-animation: shake 0.9s ease-in-out;
+    animation: shake 0.5s ease-in-out;
+    text-decoration: underline;
 }
 
-/* .nav-link:hover {
-    text-decoration: underline;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-} */
 
 
 /* headshot styling */
@@ -110,6 +110,18 @@ animation: shake 0.9s ease-in-out;
     height: auto; /* Sets the height of the icon */
 }
 
+@keyframes shake-n-grow {
+    0% {transform: translateX(0) rotate(0deg) scale(1);}
+    25% {transform: translateX(-1px) rotate(-1deg) scale(1.1);}
+    50% {transform: translateX(1px) rotate(1deg) scale(1.2);}
+    75% {transform: translateX(-1px) rotate(-1deg) scale(1.25);}
+    100% {transform: translateX(0) rotate(0deg) scale(1.25);}
+}
+
+.resume-icon:hover {
+    animation: shake-n-grow 0.5s ease-in-out;
+    transform: scale(1.25)
+}
 
 
 /* Title styling */
@@ -118,10 +130,10 @@ h1 {
     margin: 10px 0;
 }
 
-/* Links (hover effect) */
+/* Links (hover effect)
 a {
     color: #2e8b57; /* Medium green for links */
-}
+/* } */
 
 /* a:hover { */
     /* color: #405f5a; Dark green on hover */

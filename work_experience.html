@@ -1,154 +1,130 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <title>Jacob Film - Portfolio</title>
-    <meta name="description" content="Jacob Film's portfolio with sections for content and images">
-    <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #e0f7e9;
-            color: #1a3d1f;
-            margin: 0;
-            padding: 0;
-        }
+    <head>
+        <!-- title defines browser tab title shown -->
+        <title>Jacob Film</title>
 
-        header {
-            background: linear-gradient(90deg, #2e8b57, #66cdaa);
-            color: white;
-            padding: 20px;
-            text-align: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
+        <!-- description controls display or page summary on search engine results -->
+        <meta name="description" content="Jacob Film's personal website">
+        <meta name="author" content="Jacob Film">
+        <meta name="keywords" content="Engineering, Mechatronics">
 
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-        }
+        <meta charset="UTF-8">
 
-        nav ul li {
-            display: inline;
-            margin-right: 15px;
-        }
+        <!-- viewport dictates basic screen display behavior -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=0.75">
+        <!-- favicon is the browser tab icon used -->
+        <link rel="icon" href="Images/favicon.ico">
 
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-        }
+        <!-- links page styles to 'style.css' code -->
+        <link rel="stylesheet" href="style.css">
 
-        nav ul li a:hover {
-            text-decoration: underline;
-        }
+        <style>
 
-        h1 {
-            font-size: 36px;
-            margin: 10px 0;
-        }
+            h1 {
+                font-size: 36px;
+                margin: 10px 0;
+            }
 
-        section {
-            margin: 40px;
-        }
+            section {
+                margin: 40px;
+            }
 
-        .section-title {
-            font-size: 28px;
-            color: #2e8b57;
-            margin-bottom: 20px;
-        }
+            .section-title {
+                font-size: 28px;
+                color: #2e8b57;
+                margin-bottom: 20px;
+            }
 
-        .content {
-            font-size: 18px;
-            line-height: 1.6;
-            margin-bottom: 30px;
-        }
+            .content {
+                font-size: 18px;
+                line-height: 1.6;
+                margin-bottom: 30px;
+            }
 
-        .image-gallery {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 20px;
-        }
+            .image-gallery {
+                display: flex;
+                justify-content: space-around;
+                margin-top: 20px;
+            }
 
-        .image-gallery img {
-            width: 30%;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
+            .image-gallery img {
+                width: 30%;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
 
-        footer {
-            background-color: #2e8b57;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
-</head>
+            footer {
+                background-color: #2e8b57;
+                color: white;
+                text-align: center;
+                padding: 10px;
+                position: fixed;
+                width: 100%;
+                bottom: 0;
+            }
+        </style>
+    </head>
 
-<body>
+    <body>
 
-    <!-- Website Header -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="work_experience.html">Work Experience</a></li>
-                <li><a href="music.html">My Music</a></li>
-            </ul>
-        </nav>
-        <h1>Jacob Film - Portfolio</h1>
-    </header>
+        <!-- Website Header -->
+        <header>
+            <nav id="menu">
+                <p id="homepage"><a href="index.html">Jacob Film</a></p>
+                <ul id="subdomains">
+                    <li><a href="work_experience.html">Work Experience</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="https://open.spotify.com/artist/6nDce4AEY7qAoFxVhUZ8ha?si=j4uSHesgRIi5E0M89WL11w" target="_blank" class="spotify-button"> My Music </a> </li>
+                </ul>
+            </nav>
+        </header>
 
-    <!-- Content Sections -->
-    <section>
-        <h2 class="section-title">About Me</h2>
-        <p class="content">
-            Hello! I’m Jacob Film, a creative professional with a passion for music, film, and technology.
-            I have worked on a variety of projects that combine my love for these fields.
-        </p>
-    </section>
+        <!-- Content Sections -->
+        <section>
+            <h2 class="section-title">About Me</h2>
+            <p class="content">
+                Hello! I’m Jacob Film, a creative professional with a passion for music, film, and technology.
+                I have worked on a variety of projects that combine my love for these fields.
+            </p>
+        </section>
 
-    <section>
-        <h2 class="section-title">Recent Projects</h2>
-        <p class="content">
-            Here are some of the projects I've been working on recently. These projects highlight my skills
-            in filmmaking, music production, and software development.
-        </p>
-        <div class="image-gallery">
-            <img src="project1.jpg" alt="Project 1">
-            <img src="project2.jpg" alt="Project 2">
-            <img src="project3.jpg" alt="Project 3">
-        </div>
-    </section>
+        <section>
+            <h2 class="section-title">Recent Projects</h2>
+            <p class="content">
+                Here are some of the projects I've been working on recently. These projects highlight my skills
+                in filmmaking, music production, and software development.
+            </p>
+            <div class="image-gallery">
+                <img src="project1.jpg" alt="Project 1">
+                <img src="project2.jpg" alt="Project 2">
+                <img src="project3.jpg" alt="Project 3">
+            </div>
+        </section>
 
-    <section>
-        <h2 class="section-title">Work Experience</h2>
-        <p class="content">
-            Over the years, I have worked in different fields, ranging from software development to video production.
-            My diverse experience allows me to bring unique perspectives to every project I work on.
-        </p>
-    </section>
+        <section>
+            <h2 class="section-title">Work Experience</h2>
+            <p class="content">
+                Over the years, I have worked in different fields, ranging from software development to video production.
+                My diverse experience allows me to bring unique perspectives to every project I work on.
+            </p>
+        </section>
 
-    <section>
-        <h2 class="section-title">Gallery</h2>
-        <div class="image-gallery">
-            <img src="gallery1.jpg" alt="Gallery Image 1">
-            <img src="gallery2.jpg" alt="Gallery Image 2">
-            <img src="gallery3.jpg" alt="Gallery Image 3">
-        </div>
-    </section>
+        <section>
+            <h2 class="section-title">Gallery</h2>
+            <div class="image-gallery">
+                <img src="gallery1.jpg" alt="Gallery Image 1">
+                <img src="gallery2.jpg" alt="Gallery Image 2">
+                <img src="gallery3.jpg" alt="Gallery Image 3">
+            </div>
+        </section>
 
-    <!-- Footer -->
-    <footer>
-        &copy; 2024 Jacob Film | All Rights Reserved
-    </footer>
+        <!-- Footer -->
+        <footer>
+            &copy; 2024 Jacob Film | All Rights Reserved
+        </footer>
 
-</body>
+    </body>
 
 </html>

@@ -9,7 +9,7 @@ body {
 
 /* Header styling */
 header {
-    background: linear-gradient(168deg, #090909 25%, #283432 45%, #405f5a 58%, #2c3634 80%); /* Gradient from medium green to light green */
+    background: linear-gradient(168deg, #090909 25%, #283432 45%, #405f5a 58%, #2c3634 80%); /* Diagonal green and gray gradient */
     color: white;
     padding: 20px;
     text-align: center;

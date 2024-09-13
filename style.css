@@ -23,12 +23,12 @@ header {
     /* padding: 5px; */
 }
 
-#menu homepage {
+#menu p {
     flex: 1;
 }
 
-#menu subdomains {
-    flex: 2;
+#menu ul {
+    flex: 1;
 }
 
 #homepage {
@@ -41,7 +41,6 @@ header {
     text-decoration: none;
     font-size: 24px;
 }
-
 
 nav ul {
     list-style-type: none;
@@ -77,6 +76,27 @@ a {
 }
 
 a:hover {
-    color: #1a3d1f; /* Dark green on hover */
+    color: #405f5a; /* Dark green on hover */
     text-decoration: underline;
 }
+
+footer {
+    background: linear-gradient(168deg, #090909 25%, #283432 45%, #405f5a 58%, #2c3634 80%); /* Diagonal green and gray gradient */
+    color: white; /* default text color */
+    text-align: center;
+    padding: 25px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer a {
+    color: #fff;
+    font-size: 26px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* footer a:hover{
+    color: #405f5a;
+} */

@@ -150,6 +150,16 @@ footer i {
 }
 
 
+/* Work Section Styling */
+
+.work-section-label {
+    font-size: 28px;
+    justify-content: center;
+    align-content: center;
+}
+
+
+
 /* Preview Card styling */
 .preview-group {
     display: flex;
@@ -171,36 +181,44 @@ footer i {
     text-align: center;
     text-decoration: none;
     display: block;
-    color: #ffffff;
+    color: white;
     margin-inline: 20px;
-    background-color: darkgray;
-    transition: background-color 0.8s;
+    background-color: #71797E;
+    transition: background-color 1.2s;
 }
 
-.preview-card h1 {
-    font-size: 20px;
+.role {
+    font-size: 22px;
+    font-weight: normal;
     margin-top: 10px;
-    margin-inline: 10px;
-    /* padding: 0; */
+    margin-inline: 15px;
+    max-width: 360px;
+}
+
+.sector {
+    font-size: 16px;
+    font-weight: normal;
+    font-style: italic;
 }
 
 .preview-card img {
     width: 55%;
-    /* height: auto; */
+    height: auto;
     margin-block: -20px;
+    margin-bottom: -5px;
     padding: 0;
-    /* background-color: white; */
-    border-radius: 10%; /* Creates a circular shape */
+
 }
 
 .preview-card h2 {
-    font-size: 20px;
+    font-size: 18px;
     margin: 0;
     padding: 0;
 }
 
-.preview-card p {
+.preview-card h3 {
     font-size: 16px;
+    font-weight: normal;
 }
 
 .preview-card:hover {

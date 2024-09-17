@@ -125,22 +125,6 @@ nav ul li {
 }
 
 
-/* Title styling */
-h1 {
-    font-size: 36px;
-    margin: 10px 0;
-}
-
-/* Links (hover effect)
-a {
-    color: #2e8b57; /* Medium green for links */
-/* } */
-
-/* a:hover { */
-    /* color: #405f5a; Dark green on hover */
-    /* text-decoration: underline; */
-/* } */
-
 /* Footer styling */
 footer {
     background: linear-gradient(168deg, #090909 25%, #283432 45%, #405f5a 58%, #2c3634 80%); /* Diagonal green and gray gradient */
@@ -165,6 +149,46 @@ footer i {
     margin-inline: 5px;
 }
 
-/* footer a:hover{
-    color: #405f5a;
-} */
+
+/* Preview Card styling */
+.preview-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.preview-card {
+    width: 300px;
+    padding: 20px;
+    margin: 20px auto;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    color: #ffffff;
+    transition: background-color 0.3s;
+}
+
+.preview-card h1 {
+    font-size: 24px;
+}
+
+.preview-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.preview-card h2 {
+    font-size: 20px;
+}
+
+.preview-card p {
+    font-size: 16px;
+}
+
+.preview-card:hover {
+    background-color: #e1e1e1;
+}
+

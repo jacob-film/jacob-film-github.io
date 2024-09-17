@@ -41,7 +41,7 @@ nav a{
 }
 
 nav a:hover {
-    animation: shake 0.5s ease-in-out;
+    animation: shake 0.35s ease-in-out;
 }
 
 nav ul {
@@ -64,7 +64,7 @@ nav ul li {
 }
 
 .nav-link:hover {
-    animation: shake 0.5s ease-in-out;
+    animation: shake 0.35s ease-in-out;
     text-decoration: underline;
 }
 
@@ -90,12 +90,13 @@ nav ul li {
 }
 
 .headshot-text {
-    max-width: 400px;
+    max-width: 500px;
 }
 
 /* resume styling */
 .resume {
     text-align: center; /* center-aligns the container's content */
+    padding-bottom: 100px;
     /* bottom: 100px; */
 }
 
@@ -119,7 +120,7 @@ nav ul li {
 }
 
 .resume-icon:hover {
-    animation: shake-n-grow 0.5s ease-in-out;
+    animation: shake-n-grow 0.35s ease-in-out;
     transform: scale(1.25)
 }
 

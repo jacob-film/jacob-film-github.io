@@ -1,20 +1,36 @@
+/* Color Pallet */
+/* 1 - #DCE0E1 */
+/* 2 - #B9C5B9 */
+/* 3 - #6E8072 */
+/* 4 - #2E3E39 */
+/* 5 - #161B1E */
+/* 6 - #414342 */
+/* Special 7 - #405f5a */
+
 /* General body styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #adbdb8; /* Light green background */
-    color: #080808; /* Dark green text */
+    background-color: #DCE0E1; /* Color 1 */
+    color: #161B1E; /* Color 5 */
     margin: 0;
     padding: 0;
 }
 
 /* Header styling */
-header {
+/*header {
     background: linear-gradient(168deg, #090909 25%, 
     #283432 45%, #405f5a 58%, #2c3634 80%);
     /* Diagonal green and gray gradient */
-    color: white;
-    padding: 20px;
+    /* color: white; */
+    /* padding: 20px; */
     /* position: fixed; */
+    /* text-align: center; */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+
+
+header {
+    background: linear-gradient(168deg, #161B1E 25%, #2E3E39 45%, #405f5a 58%, #2E3E39 80%);
+    padding: 20px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -35,7 +51,7 @@ nav {
 }
 
 nav a{
-    color: white;
+    color: #DCE0E1;
     text-decoration: none;
     font-size: 26px;
 }
@@ -58,7 +74,7 @@ nav ul li {
 
 .nav-link {
     display: inline-block;
-    color: white;
+    color: #DCE0E1;
     /* text-decoration: none; */
     font-size: 18px;
 }
@@ -127,8 +143,9 @@ nav ul li {
 
 /* Footer styling */
 footer {
-    background: linear-gradient(168deg, #090909 25%, #283432 45%, #405f5a 58%, #2c3634 80%); /* Diagonal green and gray gradient */
+    background: linear-gradient(168deg, #161B1E 25%, #2E3E39 45%, #405f5a 58%, #2E3E39 80%);
     position: fixed;
+    z-index: 3;
     width: 100%;
     bottom: 0;
 }
@@ -144,7 +161,7 @@ footer div {
 }
 
 footer i {
-    color: #fff;
+    color: #DCE0E1;
     font-size: 26px;
     margin-inline: 5px;
 }
@@ -154,8 +171,9 @@ footer i {
 
 .work-section-label {
     font-size: 28px;
-    justify-content: center;
-    align-content: center;
+    color: #161B1E;
+    text-align: center;
+    margin-block: 40px;
 }
 
 
@@ -170,7 +188,8 @@ footer i {
 }
 
 .preview-card {
-    display: flex;
+    position: relative;
+    display: block;
     align-content: center;
     width: 300px;
     height: 300px;
@@ -180,14 +199,32 @@ footer i {
     margin: 20px auto;
     text-align: center;
     text-decoration: none;
-    display: block;
-    color: white;
+    color: #DCE0E1;
     margin-inline: 20px;
-    background-color: #71797E;
-    transition: background-color 1.2s;
+    background: linear-gradient(168deg, #161B1E 25%, #2E3E39 45%, #405f5a 58%, #2E3E39 80%);
+}
+
+.preview-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(168deg, #2F85B8 25%, #2E3E39 45%, #405f5a 58%, #2F85B8 80%); */
+    opacity: 0;
+    transition: opacity 1s ease; /* Transition the opacity */
+    z-index: 1;
+    border-radius: inherit;
+}
+
+.preview-card:hover::before {
+    opacity: 0.6; /* Make the pseudo-element fully visible on hover */
 }
 
 .role {
+    position: relative;
+    z-index: 2;
     font-size: 22px;
     font-weight: normal;
     margin-top: 10px;
@@ -196,32 +233,44 @@ footer i {
 }
 
 .sector {
+    position: relative;
+    z-index: 2;
     font-size: 16px;
     font-weight: normal;
     font-style: italic;
 }
 
 .preview-card img {
-    width: 55%;
+    /* position: absolute; */
+    position: relative;
+    width: 50%; /* default width */
     height: auto;
+    /* transform: translateX(-50%); /* Center the image horizontally */
+    /* transition: opacity 1s ease; */
+    /* opacity: 0; */
+    z-index: 2;
     margin-block: -20px;
     margin-bottom: -5px;
     padding: 0;
-
 }
 
+/* .preview-card:hover img {
+    opacity: 1; /* Make the pseudo-element fully visible on hover */
+/* } */
+
 .preview-card h2 {
+    position: relative;
+    z-index: 2;
     font-size: 18px;
     margin: 0;
+    /* margin-top: 100px; */
     padding: 0;
 }
 
 .preview-card h3 {
+    position: relative;
+    z-index: 2;
     font-size: 16px;
     font-weight: normal;
-}
-
-.preview-card:hover {
-    background-color: #e1e1e1;
 }
 

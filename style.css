@@ -36,13 +36,6 @@ header {
 }
 
 /* Navigation menu styling */
-@keyframes shake {
-    0% {transform: translateX(0) rotate(0deg);}
-    25% {transform: translateX(-1px) rotate(-1deg);}
-    50% {transform: translateX(1px) rotate(1deg);}
-    75% {transform: translateX(-1px) rotate(-1deg);}
-    100% {transform: translateX(0) rotate(0deg);}
-}
 
 nav {
     display: flex;
@@ -54,6 +47,15 @@ nav a{
     color: #DCE0E1;
     text-decoration: none;
     font-size: 26px;
+}
+
+/* animation for hover */
+@keyframes shake {
+    0% {transform: translateX(0) rotate(0deg);}
+    25% {transform: translateX(-1px) rotate(-1deg);}
+    50% {transform: translateX(1px) rotate(1deg);}
+    75% {transform: translateX(-1px) rotate(-1deg);}
+    100% {transform: translateX(0) rotate(0deg);}
 }
 
 nav a:hover {

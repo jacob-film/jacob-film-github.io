@@ -109,12 +109,15 @@ nav ul li {
 
 .headshot-text {
     max-width: 500px;
+    padding-top: 20px;
+    padding-bottom:20px;
 }
 
 /* resume styling */
 .resume {
     text-align: center; /* center-aligns the container's content */
     padding-bottom: 100px;
+    padding-top: 200px;
     /* bottom: 100px; */
 }
 

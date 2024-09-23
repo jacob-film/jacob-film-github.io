@@ -27,7 +27,7 @@
         <!-- Website Header - loaded via javascript -->
         <div id="header"></div>
 
-        <h1>Education Overview</h1>
+        <!-- <h1>Education Overview</h1>
     
         <section id="undergrad">
             <h2>Undergraduate Degree</h2>
@@ -45,11 +45,10 @@
                 <li>
                     <strong>Course 3:</strong> Short description of the course.
                 </li>
-                <!-- Add more courses as needed -->
             </ul>
-        </section>
+        </section> -->
     
-        <section id="masters">
+        <!-- <section id="masters">
             <h2>Master's Degree</h2>
             <h3>Degree Name</h3>
             <p>Institution Name, Graduation Year</p>
@@ -65,9 +64,11 @@
                 <li>
                     <strong>Course 3:</strong> Short description of the course.
                 </li>
-                <!-- Add more courses as needed -->
             </ul>
-        </section>
+        </section> -->
+
+        <!-- Coming Soon - loaded via javascript -->
+        <div id="coming_soon"></div>
 
         <!-- Website Footer - loaded via javascript -->
         <div id="footer"></div>
@@ -81,6 +82,10 @@
             fetch('elements/footer.html')
                 .then(response => response.text())
                 .then(data => {document.getElementById('footer').innerHTML = data;});
+
+            fetch('../elements/coming_soon.html')
+                .then(response => response.text())
+                .then(data => {document.getElementById('coming_soon').innerHTML = data;});
         </script>
 
     </body>

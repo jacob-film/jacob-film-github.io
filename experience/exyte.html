@@ -31,6 +31,9 @@
         <!-- Website Footer - loaded via javascript -->
         <div id="footer"></div>
 
+        <!-- Coming Soon - loaded via javascript -->
+        <div id="coming_soon"></div>
+
         <!-- Javascript for loading elements -->
         <script>
             fetch('../elements/header.html')
@@ -40,6 +43,11 @@
             fetch('../elements/footer.html')
                 .then(response => response.text())
                 .then(data => {document.getElementById('footer').innerHTML = data;});
+
+            fetch('../elements/coming_soon.html')
+                .then(response => response.text())
+                .then(data => {document.getElementById('coming_soon').innerHTML = data;});
+
         </script>
 
     </body>

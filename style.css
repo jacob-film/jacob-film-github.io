@@ -287,3 +287,102 @@ footer i:hover {
     font-weight: normal;
 }
 
+
+/* Education */
+
+.degree-title {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.degree-overview {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.degree-info, .degree-school, .degree-accomps {
+    display: flex;
+    align-items: center;
+    padding-inline: 20px;
+    padding-block: 20px;
+}
+
+.degree-info img, .degree-school img, .degree-accomps img {
+    height: 80px;
+    width: auto;
+    padding-inline: 10px;
+}
+
+/* Course Popups */
+
+.degree h3 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.courses {
+    display: block;
+    justify: center;
+    /* max-width: 200px; */
+
+}
+
+/* Popup Buttons */
+
+.open-popup {
+    /* position: relative; */
+    /* display: block; */
+    align-content: center;
+    width: 160px;
+    height: 120px;
+    padding: 4px;
+    border-radius: 10%;
+    box-shadow: 2px 4px 7px rgba(0, 0, 0, 0.4);
+    margin: 20px auto;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    color: #DCE0E1;
+    margin-inline: 20px;
+    border: none;
+    background-color: #414342
+}
+
+/* The modal background (hidden by default) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black with opacity */
+  }
+  
+  /* Modal content */
+  .modal-content {
+    background-color: white;
+    margin: 15% auto; /* Center the modal */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px; /* Adjust the width as needed */
+    text-align: center;
+  }
+  
+  /* Close button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  

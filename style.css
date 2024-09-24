@@ -322,17 +322,18 @@ footer i:hover {
 }
 
 .courses {
-    display: block;
-    justify: center;
-    /* max-width: 200px; */
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 /* Popup Buttons */
 
 .open-popup {
-    /* position: relative; */
-    /* display: block; */
+    position: relative;
+    display: block;
     align-content: center;
     width: 160px;
     height: 120px;

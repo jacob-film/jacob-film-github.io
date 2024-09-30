@@ -345,15 +345,17 @@ footer i:hover {
     text-decoration: none;
     font-size: 14px;
     color: #DCE0E1;
+    /* color: #161B1E; */
     margin-inline: 20px;
     border: none;
-    background-color: #414342;
+    background-color: #405f5a;
     transition: background-color 0.5s ease;
 }
 
 
 .open-popup:hover {
-    background-color:  #405f5a;
+    background-color:  #DCE0E1;
+    color: #000;
     text-decoration: underline;
 }
 

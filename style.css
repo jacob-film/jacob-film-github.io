@@ -337,7 +337,7 @@ footer i:hover {
     align-content: center;
     width: 160px;
     height: 120px;
-    padding: 4px;
+    padding: 15px;
     border-radius: 10%;
     box-shadow: 2px 4px 7px rgba(0, 0, 0, 0.4);
     margin: 20px auto;
@@ -347,7 +347,14 @@ footer i:hover {
     color: #DCE0E1;
     margin-inline: 20px;
     border: none;
-    background-color: #414342
+    background-color: #414342;
+    transition: background-color 0.5s ease;
+}
+
+
+.open-popup:hover {
+    background-color:  #405f5a;
+    text-decoration: underline;
 }
 
 /* The modal background (hidden by default) */
@@ -368,10 +375,18 @@ footer i:hover {
     margin: 15% auto; /* Center the modal */
     padding: 20px;
     border: 1px solid #888;
-    width: 300px; /* Adjust the width as needed */
-    text-align: center;
+    width: 400px; /* Adjust the width as needed */
+    text-align: left;
+  }
+
+  .modal-content p {
+    text-indent: 2em;
   }
   
+  .takeaways li {
+    margin-bottom: 10px;
+  }
+
   /* Close button */
   .close {
     color: #aaa;
@@ -386,4 +401,4 @@ footer i:hover {
     text-decoration: none;
     cursor: pointer;
   }
-  
+

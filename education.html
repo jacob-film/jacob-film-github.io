@@ -88,11 +88,18 @@
                         <h3>Robotic Sensing & Navigation</h3>
                         <section>
                             <p>This course served as a hands-on project-based survey of the hardware, software,
-                                and mathematical/algorithmic techniques commonly used for sensing and navigation
+                                and probabalistic / algorithmic techniques commonly used for sensing and navigation
                                 in modern robotics.</p>
                             <p>With a particular focus on cameras, GPS devices, IMUs, etc.. we learned the basic
                                 building blocks for implementing SLAM approaches, utilizing KALMAN filters, and 
                                 achieving sensor fusion by making use of custom-written device drivers and ROS via Python.</p>
+                            <h4>My Takeaways:</h4>
+                            <ul class="takeaways">
+                                <li>Discovered a deep interest in hardware and algorithmic strategies for navigation</li>
+                                <li>Grew significantly more comfortable with Python, both for enabling low-level application-specific functionality
+                                    and as a high-level tool to integrate different factors of a project</li>
+                                <li>Improved approach and techniques for concise and motivating data representation</li>
+                            </ul>
                         </section>
                     </div>
                 </div>
@@ -111,6 +118,7 @@
                     <img src="/images/diploma.svg" alt="">
                     <div>
                         <p>Mechanical Engineering</p>
+                        <p>College Honors Program</p>
                     </div>
                 </div>
                 <div class="degree-school">
@@ -124,7 +132,7 @@
                     <img src="/images/ribbon.svg" alt="">
                     <div>
                         <p>Trustees Scholarship (Full Tuition)</p>
-                        <p>College Honors Program</p>
+
                         <p>GPA: 3.98/4.00</p>
                     </div>
                 </div>
@@ -167,8 +175,6 @@
         <!-- Link to the external JavaScript file -->
         <script src="course_popup.js"></script>
 
-
-
         <!-- Coming Soon - loaded via javascript -->
         <div id="coming_soon"></div>
 
@@ -188,6 +194,12 @@
             fetch('../elements/coming_soon.html')
                 .then(response => response.text())
                 .then(data => {document.getElementById('coming_soon').innerHTML = data;});
+        </script>
+
+        <script>
+            let currentPage = document.getElementById("education");
+            console.log(currentPage.id)
+            // currentPage.style.textDecoration = "underline";
         </script>
 
     </body>

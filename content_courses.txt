@@ -1,0 +1,79 @@
+Some notes: 
+Use first person ("I learned") - it's your website
+
+
+=================================================================================
+
+Course:
+
+Description:
+
+My Takeaways:
+
+
+
+=================================================================================
+
+Course:
+
+Automous Field Robotics
+
+Description:
+
+This course thoroughly reinforced a foundational knowledge of optimization techniques, probabalistic 
+state estimation & error propogation, and advanced spatial geometry (epipolar / projective), off of which
+was built a broad exposure to modern perception techniques, mapping algorithms, and general autonomy 
+as relates to the field of robotic navigation.
+
+My work during the semester consisted of several individual topical projects and 2 research-based presentations.
+These included classic tasks such as markov state-transition modeling, homography-based image stitching and trajectory
+extraction, optimized construction of structural point-clouds from motion-series images (SfM), and KALMAN filter implementation
+for multi-sensor data.
+
+My research presentations were on ORB-SLAM and Occupancy Grids / Path Planning.
+
+My Takeaways:
+
+Reinforced ability to conceptualize and model information in a probabalistic framework
+
+Significantly deeper understanding of algorithmic optimization
+(Gradient Descent, RANSAC, Bundle Adjustment, Factor Graphs usage, etc..)
+
+
+
+=================================================================================
+
+Course:
+
+Robotic Sensing & Navigation
+
+Description:
+
+This course served as a hands-on project-based survey of the hardware, software,
+probabalistic models, and algorithmic techniques commonly used for sensing and navigation
+in modern robotics.
+
+Through the use of cameras, GPS (GNSS) devices, IMUs, and lasers, I learned the basic
+building blocks for implementing SLAM approaches, utilizing KALMAN filters, and achieving
+sensor fusion by making use of both custom-written and library-based software in ROS and Python.
+
+My Takeaways:
+
+Discovered a deep interest in the hardware and algorithmic strategies used for navigation
+
+Grew significantly more comfortable with Python, both for enabling low-level 
+application-specific functionality and as a high-level tool to integrate different factors of a project
+
+Improved approach and techniques for concise and motivating data representation
+
+
+
+=================================================================================
+
+Course:
+
+Robot Mechanics & Controls
+
+Description:
+
+My Takeaways:

@@ -62,7 +62,7 @@
                 <!-- Course Popup Buttons -->
                 <button class="open-popup" data-target="popup-AFR">Autonomous Field Robotics</button>
                 <button class="open-popup" data-target="popup-RSN">Robotic Sensing & Navigation</button>
-                <button class="open-popup" data-target="popup-RMC">Robotic Mechanics & Controls</button>
+                <button class="open-popup" data-target="popup-RMC">Robot Mechanics & Controls</button>
                 <button class="open-popup" data-target="popup-DSP">Digital Signal Processing</button>
                 <button class="open-popup" data-target="popup-CS">Control Systems Engineering</button>
                 <button class="open-popup" data-target="popup-MS">Mechatronic Systems</button>
@@ -71,17 +71,51 @@
 
 
                 <!-- Course Popup Content -->
+
+
+                <div id="popup-courseabbrev" class="modal">
+                    <div class="modal-content">
+                        <span class="close" data-target="popup-RSN">&times;</span>
+                        <h3>Course Title</h3>
+                        <section>
+                            <p>Here's a summary of the course.</p>
+                            <p>More detailed information of what we worked on.</p>
+                            <h4>My Takeaways:</h4>
+                            <ul class="takeaways">
+                                <li>Learned this First Takeaway</li>
+                                <li>Developed this Second Takeaway</li>
+                                <li>Really loved this Third Takeaway</li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+
                 <div id="popup-AFR" class="modal">
                     <div class="modal-content">
                         <span class="close" data-target="popup-AFR">&times;</span>
                         <h3>Autonomous Field Robotics</h3>
                         <section>
-                            <p>This course took a deep dive into modern algorithmic approaches for robot perceptual autonomy.</p>
-                            <p>More description coming soon.</p>
+                            <p>This course thoroughly reinforced a foundational knowledge of optimization techniques, probabalistic 
+                                state estimation & error propogation, and advanced spatial geometry (epipolar / projective), off of which
+                                was built a broad exposure to modern perception techniques, mapping algorithms, and general autonomy 
+                                as relates to the field of robotic navigation.</p>
+                            <p>My work during the semester consisted of several individual topical projects and 2 research-based presentations.
+                                These included classic tasks such as markov state-transition modeling, homography-based image stitching and trajectory
+                                extraction, optimized construction of structural point-clouds from motion-series images (SfM), and KALMAN filter implementation
+                                for multi-sensor data.</p>
+                            <p>My research presentations were on ORB-SLAM and Occupancy Grids / Path Planning.</p>
+                            <h4>My Takeaways:</h4>
+                            <ul class="takeaways">
+                                <li>Reinforced ability to conceptualize and model information in a probabalistic framework</li>
+                                <li>Significantly deeper understanding of algorithmic optimization
+                                    (Gradient Descent, RANSAC, Bundle Adjustment, Factor Graphs usage, etc..)</li>
+                                <!-- <li>Really loved this Third Takeaway</li> -->
+                            </ul>
                         </section>
                     </div>
                 </div>
-    
+
+
                 <div id="popup-RSN" class="modal">
                     <div class="modal-content">
                         <span class="close" data-target="popup-RSN">&times;</span>
